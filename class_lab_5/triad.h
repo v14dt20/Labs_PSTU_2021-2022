@@ -1,9 +1,10 @@
 #pragma once
 #include <iostream>
+#include "Object.h"
 
 using namespace std;
 
-class TRIAD
+class TRIAD : public Object
 {
 //атрибуты
 protected:
@@ -17,7 +18,7 @@ public:
     TRIAD(const TRIAD&);
 
     //деструктор
-    virtual ~TRIAD(void);
+    ~TRIAD();
 
     //модификаторы
     virtual void set_first(int);
@@ -28,6 +29,8 @@ public:
     virtual int get_first();
     virtual int get_second();
     virtual int get_third();
+
+    void Show() override;
 
     virtual TRIAD& operator=(const TRIAD&);//оператор присваивания
 

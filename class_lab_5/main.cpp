@@ -1,6 +1,7 @@
 #include <iostream>
-#include "triad.cpp"
-#include "date.cpp"
+#include "Object.h"
+#include "triad.h"
+#include "date.h"
 #include "vector.h"
 
 using namespace std;
@@ -12,7 +13,7 @@ int main()
     cin >> a;
     DATE b;
     cin >> b;
-    TRIAD* p = &a;
+    Object* p = &a;
     v.Add(p);
     p = &b;
     v.Add(p);

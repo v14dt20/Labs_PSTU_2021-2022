@@ -11,7 +11,7 @@ Vector::Vector(void)
 }
 Vector::Vector(int n)
 {
-    beg = new TRIAD* [n];
+    beg = new Object* [n];
     cur = 0;
     size = n;
 }
@@ -22,9 +22,9 @@ Vector::~Vector(void)
     beg = 0;
 }
 
-void Vector::Add(TRIAD* p)
+void Vector::Add(Object* p)
 {
-    if (cur > size)
+    if (cur < size)
     {
         beg[cur] = p;
         cur++;
@@ -34,12 +34,13 @@ void Vector::Add(TRIAD* p)
 ostream& operator<<(ostream& out, const Vector& v)
 {
     if (v.size == 0) out << "Empty!";
-    TRIAD** p = v.beg;
     for (int i = 0; i < v.cur; i++)
     {
-        out << *p << "/";
-        p++;
+        Object* p = v.beg[i];
+        p->Show();
+        out << "/";
     }
+    out << "\n";
 
     return out;
 }

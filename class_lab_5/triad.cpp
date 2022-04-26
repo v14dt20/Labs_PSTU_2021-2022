@@ -14,7 +14,7 @@ TRIAD::TRIAD(int a, int b, int c)
 {
     first = a;
     second = b;
-    second = c;
+    third = c;
 }
 TRIAD::TRIAD(const TRIAD& T)
 {
@@ -24,10 +24,7 @@ TRIAD::TRIAD(const TRIAD& T)
 }
 
 //деструктор
-TRIAD::~TRIAD()
-{
-
-}
+TRIAD::~TRIAD() = default;
 
 //модификаторы
 void TRIAD::set_first(int num)
@@ -55,6 +52,10 @@ int TRIAD::get_second()
 int TRIAD::get_third()
 {
     return third;
+}
+
+void TRIAD::Show() {
+    cout << first << "." << second << "." << third;
 }
 
 //оператор присваивания

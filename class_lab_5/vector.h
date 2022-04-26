@@ -1,13 +1,13 @@
 #pragma once
 #include <iostream>
-#include "triad.h"
+#include "Object.h"
 
 using namespace std;
 
 class Vector
 {
 protected:
-    TRIAD** beg;
+    Object** beg;
     int size;
     int cur;
 public:
@@ -16,7 +16,7 @@ public:
 
     ~Vector(void);
 
-    void Add(TRIAD*);
+    void Add(Object*);
 
     friend ostream& operator<<(ostream&, const Vector&);
 };
