@@ -1,8 +1,8 @@
 #include <iostream>
-#include "Object.h"
-#include "triad.h"
-#include "date.h"
-#include "vector.h"
+#include "Object.cpp"
+#include "triad.cpp"
+#include "date.cpp"
+#include "vector.cpp"
 
 using namespace std;
 
