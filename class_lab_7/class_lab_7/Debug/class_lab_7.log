@@ -1,0 +1,8 @@
+﻿  main.cpp
+  Set.cpp
+  Создание кода...
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: __thiscall Set<int>::Set<int>(int,int)" (??0?$Set@H@@QAE@HH@Z) в функции _main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: __thiscall Set<int>::~Set<int>(void)" (??1?$Set@H@@QAE@XZ) в функции _main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl operator<<(class std::basic_ostream<char,struct std::char_traits<char> > &,class Set<int> const &)" (??6@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AAV01@ABV?$Set@H@@@Z) в функции _main.
+C:\Users\Vlad\Documents\Documents\PNIPU\Информатика\Классы\class_lab_7\Debug\class_lab_7.exe : fatal error LNK1120: неразрешенных внешних элементов: 3
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(1094,5): error MSB6006: "link.exe" завершилась с кодом 1120.

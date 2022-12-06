@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\Vlad\Documents\Documents\PNIPU\Информатика\Классы\class_lab_7\class_lab_7\Set.h(70): warning C4715: Set<Money>::operator[]: значение возвращается не при всех путях выполнения
+  class_lab_7.vcxproj -> C:\Users\Vlad\Documents\Documents\PNIPU\Информатика\Классы\class_lab_7\x64\Debug\class_lab_7.exe
