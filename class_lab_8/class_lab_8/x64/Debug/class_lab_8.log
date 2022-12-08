@@ -1,0 +1,9 @@
+﻿  Abiturient.cpp
+  Dialog.cpp
+  List.cpp
+  Object.cpp
+  Person.cpp
+  main.cpp
+  Создание кода...
+C:\Users\Vlad\Documents\Documents\PNIPU\Информатика\Классы\class_lab_8\class_lab_8\Person.cpp(44): warning C4715: Person::HandleEvent: значение возвращается не при всех путях выполнения
+  class_lab_8.vcxproj -> C:\Users\Vlad\Documents\Documents\PNIPU\Информатика\Классы\class_lab_8\x64\Debug\class_lab_8.exe
