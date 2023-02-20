@@ -1,0 +1,39 @@
+#pragma once
+#include <iostream>
+
+using namespace std;
+
+class Money
+{
+protected:
+	long rub;
+	int kop;
+public:
+	//конструкторы
+	Money(void);
+	Money(long, int);
+	Money(const Money&);
+
+	//деструктор
+	~Money(void);
+
+	//селекторы
+	long Get_Rub();
+	int Get_Kop();
+
+	//модификаторы
+	void Set_Rub(long);
+	void Set_Kop(int);
+
+	Money operator= (const Money&);//оператор присваивания
+	const Money& operator+ (const Money&);//сложение
+	const Money& operator- (const Money&);//вычитание
+	
+	//дружественные функции ввода/вывода
+	friend ostream& operator<< (ostream& out, const Money& m);
+	friend istream& operator>> (istream& in, Money& m);
+
+	//дружественные функции для работы с файловыми потоками
+	friend fstream& operator<< (fstream& fout, const Money&);
+	friend fstream& operator>> (fstream& fin, Money&);
+};
